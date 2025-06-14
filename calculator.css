@@ -1,0 +1,129 @@
+.calcContainer {
+  background-color: rgb(21, 21, 21);
+  margin: 0 auto;
+  padding: 20px;
+  border: outset grey;
+  border-radius: 20px;
+  width: 200px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+p {
+  font-family: "Michroma", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  font-style: normal;
+  color: rgb(227, 124, 15);
+  text-shadow: 1px 1px 2px rgb(161, 131, 98);
+}
+.calcHeader {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative; /* For absolute positioning if needed */
+}
+
+#selectTheme {
+  background: transparent;
+  border: none;
+  color: rgb(227, 124, 15); /* Match your accent color */
+  cursor: pointer;
+  font-size: 16px;
+  padding: 0;
+  margin-left: 10px; /* Space between title and toggle */
+}
+
+/* Light Mode */
+.calcContainer.light-mode {
+  background-color: #f0f0f0;
+}
+.light-mode input {
+  background-color: #f0f0f0;
+  color: #333;
+}
+.light-mode button {
+  background-color: #d3d3d3;
+  color: #333;
+}
+.light-mode .operators {
+  color: #ff8c00; /* Slightly lighter orange */
+}
+.light-mode .equalSign {
+  background-color: #ff8c00;
+}
+.light-mode p {
+  color: #ff8c00;
+  text-shadow: none;
+}
+
+input {
+  background-color: rgb(21, 21, 21);
+  color: #e3e3e3;
+  width: 100%;
+  height: 150px;
+  border: none;
+  text-align: right;
+  overflow-x: auto;
+  font-size: 30px;
+}
+
+.material-icons {
+  color: rgb(227, 124, 15);
+}
+
+button {
+  background-color: grey;
+  color: whitesmoke;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  font-family: "Michroma", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  font-style: normal;
+}
+
+.btnSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.operators {
+  color: rgb(227, 124, 15);
+  font-size: 12px;
+}
+
+.equalSign {
+  background-color: rgb(227, 124, 15);
+  height: 90px;
+  font-size: 20px;
+}
+
+.operators:hover,
+button:hover {
+  background-color: #f1f1f1;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  border-color: #bbb;
+  color: #ff8c00;
+}
+
+.equalSign:hover {
+  background-color: #f1f1f1;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  border-color: #bbb;
+}

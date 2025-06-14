@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <link rel="stylesheet" href="calculator.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Michroma&display=swap"
+      rel="stylesheet"
+    />
+    <script src="calculator.js" defer></script>
+    <title>Adekunle's Calculator</title>
+  </head>
+  <body>
+    <div class="calcContainer">
+      <header class="calcHeader">
+        <p>CALCULATOR</p>
+        <button id="selectTheme">⏾</button>
+      </header>
+      <input type="text" id="calcInput" />
+      <div class="btnSection">
+        <div class="btns">
+          <button class="operators">%</button><button>7</button
+          ><button>4</button><button>1</button
+          ><button class="operators">AC</button>
+        </div>
+        <div class="btns">
+          <button class="operators">&divide;</button><button>8</button
+          ><button>5</button><button>2</button><button>0</button>
+        </div>
+        <div class="btns">
+          <button class="operators">x</button><button>9</button
+          ><button>6</button><button>3</button><button>.</button>
+        </div>
+        <div class="btns">
+          <button class="operators">
+            <i class="material-icons" id="delete">backspace</i></button
+          ><button class="operators">-</button
+          ><button class="operators">+</button
+          ><button class="equalSign">=</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
