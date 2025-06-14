@@ -12,7 +12,7 @@ let shouldResetScreen = false;
 selectTheme.addEventListener("click", () => {
   calcContainer.classList.toggle("light-mode");
   const isLightMode = calcContainer.classList.contains("light-mode");
-  selectTheme.textContent = isLightMode ? "☀️" : "⏾";
+  selectTheme.textContent = isLightMode ? "☀️" : "🌙";
   localStorage.setItem("calculatorTheme", isLightMode ? "light" : "dark");
 });
 
